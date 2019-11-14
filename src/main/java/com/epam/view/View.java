@@ -14,7 +14,7 @@ public class View {
     private Map<String, Printable> methodsMenu;
     private Scanner input = new Scanner(System.in);
 
-    public View(){
+    public View() {
         controller = new ControllerImpl();
         menu = new LinkedHashMap<>();
         menu.put("1", "1 - Work with Arithmetic Exception");
@@ -30,7 +30,6 @@ public class View {
         methodsMenu.put("4", this::pressButton4);
 
     }
-
 
 
     public void pressButton1() {
